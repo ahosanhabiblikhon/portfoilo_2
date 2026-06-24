@@ -1,165 +1,213 @@
 # Ahosan Habib Likhon - Portfolio Website
 
-A modern, premium personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+A modern, premium portfolio website built with Next.js, TypeScript, and Tailwind CSS. This portfolio showcases my work as a Biotechnology & Genetic Engineering student, aspiring web developer, research enthusiast, and photographer.
 
-## About
+## 🌟 Features
 
-This is the personal portfolio website of **Ahosan Habib Likhon**, a Biotechnology & Genetic Engineering student at Islamic University, Bangladesh. The website showcases skills in web development, research work in biotechnology, and photography.
+- **Modern Design**: Premium glassmorphism UI with smooth animations
+- **Dark/Light Mode**: Toggle between themes with persistent preferences
+- **Fully Responsive**: Optimized for mobile, tablet, and desktop devices
+- **SEO Optimized**: Meta tags and structured data for better search visibility
+- **Performance**: Fast loading with optimized images and code splitting
+- **Interactive**: Smooth animations using Framer Motion
+- **Dynamic Projects**: GitHub API integration to showcase latest repositories
+- **Photography Gallery**: Masonry layout with beautiful hover effects
 
-## Features
+## 🚀 Tech Stack
 
-- 🎨 Modern, premium design with glassmorphism effects
-- 🌓 Dark/Light mode toggle
-- 📱 Fully responsive (mobile, tablet, desktop)
-- ⚡ Fast loading and optimized for performance
-- 🎭 Smooth animations with Framer Motion
-- 🎯 SEO optimized
-- 📦 Static export for GitHub Pages deployment
-- 🔗 Dynamic GitHub repository integration
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Theme**: next-themes
+- **Deployment**: Vercel
 
-## Tech Stack
+## 📦 Installation
 
-- **Framework:** Next.js 14
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
-- **Theme:** next-themes
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ahosanhabiblikhon/portfolio.git
+   cd portfolio
+   ```
 
-## Getting Started
+2. **Install dependencies**:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-### Prerequisites
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-- Node.js 18+ installed
-- npm or yarn package manager
+4. **Open your browser**:
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-### Installation
+## 🏗️ Build for Production
 
-1. Clone the repository:
-\`\`\`bash
-git clone https://github.com/ahosanhabiblikhon/portfolio-v3.git
-cd portfolio-v3
-\`\`\`
-
-2. Install dependencies:
-\`\`\`bash
-npm install
-# or
-yarn install
-\`\`\`
-
-3. Run the development server:
-\`\`\`bash
-npm run dev
-# or
-yarn dev
-\`\`\`
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Building for Production
-
-### For Vercel/Netlify Deployment
-
-\`\`\`bash
+```bash
 npm run build
 npm start
-\`\`\`
+```
 
-### For GitHub Pages
+## 📁 Project Structure
 
-1. Build and export static files:
-\`\`\`bash
-npm run export
-\`\`\`
+```
+ahosan-portfolio/
+├── app/
+│   ├── layout.tsx          # Root layout with theme provider
+│   ├── page.tsx            # Home page
+│   └── globals.css         # Global styles
+├── components/
+│   ├── hero.tsx            # Hero section
+│   ├── about.tsx           # About section
+│   ├── skills.tsx          # Skills section
+│   ├── projects.tsx        # Projects with GitHub API
+│   ├── research.tsx        # Research & academic work
+│   ├── photography.tsx     # Photography portfolio
+│   ├── contact.tsx         # Contact form
+│   ├── navigation.tsx      # Navigation bar
+│   ├── footer.tsx          # Footer
+│   └── theme-provider.tsx  # Theme context provider
+├── public/                 # Static assets
+├── tailwind.config.ts      # Tailwind configuration
+├── next.config.js          # Next.js configuration
+└── package.json            # Dependencies
+```
 
-2. The static files will be in the \`out/\` directory.
+## 🎨 Customization
 
-3. Deploy the contents of \`out/\` to GitHub Pages:
-   - Push to the \`gh-pages\` branch, or
-   - Configure GitHub Pages to use the \`out/\` directory
+### Update Personal Information
 
-## Project Structure
+1. **Hero Section** (`components/hero.tsx`):
+   - Update name, title, and location
+   - Modify social media links
 
-\`\`\`
-portfolio-v3/
-├── app/                  # Next.js app directory
-│   ├── layout.tsx       # Root layout
-│   ├── page.tsx         # Home page
-│   └── globals.css      # Global styles
-├── components/          # React components
-│   ├── About.tsx
-│   ├── Contact.tsx
-│   ├── Footer.tsx
-│   ├── Hero.tsx
-│   ├── Navbar.tsx
-│   ├── Photography.tsx
-│   ├── Projects.tsx
-│   ├── Research.tsx
-│   ├── Skills.tsx
-│   └── ThemeProvider.tsx
-├── public/              # Static assets
-├── next.config.js       # Next.js configuration
-├── tailwind.config.js   # Tailwind CSS configuration
-├── tsconfig.json        # TypeScript configuration
-└── package.json         # Dependencies
-\`\`\`
+2. **About Section** (`components/about.tsx`):
+   - Edit personal story and achievements
+   - Update statistics
 
-## Sections
+3. **Skills** (`components/skills.tsx`):
+   - Add or remove skills
+   - Adjust skill levels
 
-1. **Hero** - Introduction with animated headline and social links
-2. **About** - Personal story and academic background
-3. **Skills** - Technical and creative skills showcase
-4. **Projects** - GitHub repositories integration
-5. **Research** - Academic work and research interests
-6. **Photography** - Photography portfolio showcase
-7. **Contact** - Contact form and social media links
-8. **Footer** - Quick links and copyright
+4. **Research** (`components/research.tsx`):
+   - Update research interests
+   - Add academic contributions
 
-## Customization
+5. **Photography** (`components/photography.tsx`):
+   - Replace image URLs with your own
 
-To customize the website for your own use:
+6. **Contact** (`components/contact.tsx`):
+   - Update email and location
+   - Modify social links
 
-1. Update personal information in components
-2. Change color scheme in \`tailwind.config.js\`
-3. Replace social media links
-4. Update GitHub username for project integration
-5. Add your own images to \`public/images/\`
+### Change Colors
 
-## Deployment
+Edit `tailwind.config.ts` to customize the color scheme:
 
-### Vercel (Recommended)
+```typescript
+colors: {
+  primary: {
+    // Your custom colors
+  },
+}
+```
 
-1. Push to GitHub
-2. Import project in Vercel
-3. Deploy automatically
+### Modify Animations
 
-### GitHub Pages
+Adjust animation settings in `tailwind.config.ts` under `animation` and `keyframes`.
 
-1. Build the static export: \`npm run export\`
-2. Push \`out/\` directory to \`gh-pages\` branch
-3. Enable GitHub Pages in repository settings
+## 🌐 Deployment
 
-### Netlify
+### Deploy to Vercel (Recommended)
 
-1. Connect your repository
-2. Set build command: \`npm run build\`
-3. Set publish directory: \`out\`
+1. **Push your code to GitHub**
 
-## License
+2. **Import to Vercel**:
+   - Go to [vercel.com](https://vercel.com)
+   - Click "Import Project"
+   - Select your GitHub repository
+   - Click "Deploy"
+
+3. **Configure Domain** (Optional):
+   - Add custom domain in Vercel dashboard
+
+### Alternative Deployment Options
+
+- **Netlify**: Connect GitHub repo and deploy
+- **AWS Amplify**: Use AWS hosting services
+- **GitHub Pages**: Export static site with `next export`
+
+## 🔧 Environment Variables
+
+No environment variables required for basic functionality. If you want to add contact form backend or analytics:
+
+Create `.env.local`:
+```env
+NEXT_PUBLIC_GOOGLE_ANALYTICS=your_ga_id
+NEXT_PUBLIC_CONTACT_API=your_api_endpoint
+```
+
+## 📱 Social Media Links
+
+Update these in respective component files:
+
+- GitHub: [ahosanhabiblikhon](https://github.com/ahosanhabiblikhon)
+- Facebook: [ahosan.habib.likhon.nur](https://www.facebook.com/ahosan.habib.likhon.nur)
+- Instagram: [ahosan_habib_likhon](https://www.instagram.com/ahosan_habib_likhon)
+- Photography: [ahosan.photo](https://instagram.com/ahosan.photo)
+- LinkedIn: [md-ahosan-habib-likhon](https://www.linkedin.com/in/md-ahosan-habib-likhon-84707a295/)
+
+## 🐛 Troubleshooting
+
+### Build Errors
+
+- Clear `.next` folder: `rm -rf .next`
+- Delete `node_modules` and reinstall: `rm -rf node_modules && npm install`
+
+### Image Loading Issues
+
+- Ensure image URLs are accessible
+- Check `next.config.js` for allowed image domains
+
+### Theme Not Persisting
+
+- Clear browser cache and cookies
+- Check browser localStorage permissions
+
+## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## Contact
+## 🤝 Contributing
 
-**Ahosan Habib Likhon**
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/ahosanhabiblikhon/portfolio/issues).
 
-- GitHub: [@ahosanhabiblikhon](https://github.com/ahosanhabiblikhon)
-- Facebook: [Ahosan Habib Likhon](https://www.facebook.com/ahosan.habib.likhon.nur)
-- Instagram: [@ahosan_habib_likhon](https://www.instagram.com/ahosan_habib_likhon)
-- Photography: [@ahosan.photo](https://instagram.com/ahosan.photo)
-- LinkedIn: [Md Ahosan Habib Likhon](https://www.linkedin.com/in/md-ahosan-habib-likhon-84707a295/)
+## 📧 Contact
+
+- **Email**: ahosanhabiblikhon@example.com
+- **Location**: Kushtia, Bangladesh
+- **University**: Islamic University, Bangladesh
+
+## 💖 Acknowledgments
+
+- Design inspiration from Apple, Vercel, Linear, Stripe, Framer, Raycast, and GitHub
+- Icons by [Lucide](https://lucide.dev)
+- Images from [Unsplash](https://unsplash.com)
+- Fonts by [Google Fonts](https://fonts.google.com)
 
 ---
 
-Built with ❤️ using Next.js, TypeScript, and Tailwind CSS
+**Built with passion by Ahosan Habib Likhon**
+
+🌟 If you like this portfolio, please give it a star on GitHub!

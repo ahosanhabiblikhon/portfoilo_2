@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
   images: {
-    unoptimized: true,
+    domains: ['raw.githubusercontent.com', 'avatars.githubusercontent.com', 'images.unsplash.com'],
   },
-  basePath: '',
-  trailingSlash: true,
+  reactStrictMode: true,
 }
 
 module.exports = nextConfig
